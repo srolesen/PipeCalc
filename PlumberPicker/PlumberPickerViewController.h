@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlumberPickerViewController : UIViewController
+@interface PlumberPickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
+@property(nonatomic, assign) id<UIPickerViewDelegate> delegate;
 @end

@@ -18,6 +18,8 @@
 		AC645C951676989700DD6F4C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC645C941676989700DD6F4C /* Default-568h@2x.png */; };
 		AC645C981676989700DD6F4C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC645C961676989700DD6F4C /* MainStoryboard.storyboard */; };
 		AC645C9B1676989700DD6F4C /* PlumberPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC645C9A1676989700DD6F4C /* PlumberPickerViewController.m */; };
+		AC645CB61677E55800DD6F4C /* Plumber.png in Resources */ = {isa = PBXBuildFile; fileRef = AC645CB51677E55800DD6F4C /* Plumber.png */; };
+		AC645CB81677EB1F00DD6F4C /* waterleaf.png in Resources */ = {isa = PBXBuildFile; fileRef = AC645CB71677EB1F00DD6F4C /* waterleaf.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		AC645C971676989700DD6F4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AC645C991676989700DD6F4C /* PlumberPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlumberPickerViewController.h; sourceTree = "<group>"; };
 		AC645C9A1676989700DD6F4C /* PlumberPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlumberPickerViewController.m; sourceTree = "<group>"; };
+		AC645CB51677E55800DD6F4C /* Plumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plumber.png; sourceTree = "<group>"; };
+		AC645CB71677EB1F00DD6F4C /* waterleaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterleaf.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		AC645C6F1676989700DD6F4C = {
 			isa = PBXGroup;
 			children = (
+				AC645CB71677EB1F00DD6F4C /* waterleaf.png */,
+				AC645CB51677E55800DD6F4C /* Plumber.png */,
 				AC645C841676989700DD6F4C /* PlumberPicker */,
 				AC645C7D1676989700DD6F4C /* Frameworks */,
 				AC645C7B1676989700DD6F4C /* Products */,
@@ -164,6 +170,8 @@
 				AC645C931676989700DD6F4C /* Default@2x.png in Resources */,
 				AC645C951676989700DD6F4C /* Default-568h@2x.png in Resources */,
 				AC645C981676989700DD6F4C /* MainStoryboard.storyboard in Resources */,
+				AC645CB61677E55800DD6F4C /* Plumber.png in Resources */,
+				AC645CB81677EB1F00DD6F4C /* waterleaf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
