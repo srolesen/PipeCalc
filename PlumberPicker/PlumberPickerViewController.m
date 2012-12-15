@@ -9,6 +9,9 @@
 #import "PlumberPickerViewController.h"
 
 @interface PlumberPickerViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *pYear;
+@property (weak, nonatomic) IBOutlet UILabel *wYear;
+@property (weak, nonatomic) IBOutlet UILabel *wWater;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
@@ -113,32 +116,34 @@
     }
     return @"damn, switch failure in picker";
 }
-- (IBAction)laLa:(id)sender {
-    NSLog(@"lalalalala %d",[_pickerView selectedRowInComponent:2]);
-    
+//If the user chooses from the pickerview, it calls this function;
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{    
     // set variables here from selected row's
-    float pipeWidth = (((float)[_pickerView selectedRowInComponent:0]+2)/8)*0.9;
-    int pipeLength = [_pickerView selectedRowInComponent:1];
-//    int mainsPressure = [_pickerView selectedRowInComponent:2];
+    float pipeWidth = (((float)[_pickerView selectedRowInComponent:0]+2)/8)*2.54*0.9;
+    float pipeLength = (float)[_pickerView selectedRowInComponent:1];
     float tapConsumption = ((float)[_pickerView selectedRowInComponent:3]/5);
-
+        //    int mainsPressure = [_pickerView selectedRowInComponent:2];
+    
+    
+    //Let's print in the console what the user had chosen;
+    NSLog(@"rørdiameter i cm %f",pipeWidth);
+    
+    
     
     // do calculation here
-    float pipeVolume = 3.14*pipeLength*(pipeWidth/2)*(pipeWidth/2);
+    float pipeVolume = 3.14*pipeLength*10*(pipeWidth/20)*(pipeWidth/20);
     float pipeLag = (pipeVolume/tapConsumption)*60;
     
     
-    
-    
-    //write testresults to console:
-    NSLog(@"pipeWidth %f", tapConsumption);
-    NSLog(@"pipeLag %f", pipeLag);
-    
-    
     //write result to the label
-    //int myInteger = [_pickerView selectedRowInComponent:2];
     NSString* myNewString = [NSString stringWithFormat:@"%0.1f s", pipeLag];
     self.label.text = myNewString;
+    NSString* myWaterString = [NSString stringWithFormat:@"%0.1f l", pipeVolume];
+    self.wWater.text = myWaterString;
+    NSString* myWaterYearString = [NSString stringWithFormat:@"%0.1f l", pipeVolume*8*365];
+    self.wYear.text = myWaterYearString;
+    NSString* myPriceYear = [NSString stringWithFormat:@"%0.1f kr", pipeVolume*8*365*0.25];
+    self.pYear.text = myPriceYear;
 }
-
 @end
