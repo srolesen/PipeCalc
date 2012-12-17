@@ -20,6 +20,7 @@
 		AC645C9B1676989700DD6F4C /* PlumberPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC645C9A1676989700DD6F4C /* PlumberPickerViewController.m */; };
 		AC645CB61677E55800DD6F4C /* Plumber.png in Resources */ = {isa = PBXBuildFile; fileRef = AC645CB51677E55800DD6F4C /* Plumber.png */; };
 		AC645CB81677EB1F00DD6F4C /* waterleaf.png in Resources */ = {isa = PBXBuildFile; fileRef = AC645CB71677EB1F00DD6F4C /* waterleaf.png */; };
+		AC9D91EA167E107E00C389B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC9D91E9167E107E00C389B2 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AC645C9A1676989700DD6F4C /* PlumberPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlumberPickerViewController.m; sourceTree = "<group>"; };
 		AC645CB51677E55800DD6F4C /* Plumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plumber.png; sourceTree = "<group>"; };
 		AC645CB71677EB1F00DD6F4C /* waterleaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterleaf.png; sourceTree = "<group>"; };
+		AC9D91E9167E107E00C389B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				AC645C961676989700DD6F4C /* MainStoryboard.storyboard */,
 				AC645C991676989700DD6F4C /* PlumberPickerViewController.h */,
 				AC645C9A1676989700DD6F4C /* PlumberPickerViewController.m */,
+				AC9D91E9167E107E00C389B2 /* Settings.bundle */,
 				AC645C851676989700DD6F4C /* Supporting Files */,
 			);
 			path = PlumberPicker;
@@ -172,6 +175,7 @@
 				AC645C981676989700DD6F4C /* MainStoryboard.storyboard in Resources */,
 				AC645CB61677E55800DD6F4C /* Plumber.png in Resources */,
 				AC645CB81677EB1F00DD6F4C /* waterleaf.png in Resources */,
+				AC9D91EA167E107E00C389B2 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
