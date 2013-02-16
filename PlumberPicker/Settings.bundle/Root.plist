@@ -33,6 +33,8 @@
 		<dict>
 			<key>KeyboardType</key>
 			<string>NumberPad</string>
+			<key>DefaultValue</key>
+			<string>90</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
@@ -42,13 +44,25 @@
 		</dict>
 		<dict>
 			<key>KeyboardType</key>
-			<string>NumberPad</string>
+			<string>NumbersAndPunctuation</string>
+			<key>DefaultValue</key>
+			<string>2</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
 			<string>kwh price</string>
 			<key>Key</key>
 			<string>kwh_price</string>
+		</dict>
+		<dict>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>oilprice</string>
+			<key>Key</key>
+			<string>ltr_oilprice</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -90,7 +104,7 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Gravity</string>
+			<string>test</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -107,5 +121,16 @@
 	</array>
 	<key>StringsTable</key>
 	<string>Root</string>
+	<key>Title</key>
+	<dict>
+		<key>KeyboardType</key>
+		<string>NumberPad</string>
+		<key>Type</key>
+		<string>PSTextFieldSpecifier</string>
+		<key>Title</key>
+		<string>kwh price</string>
+		<key>Key</key>
+		<string>kwh_price</string>
+	</dict>
 </dict>
 </plist>

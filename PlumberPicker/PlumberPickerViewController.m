@@ -141,30 +141,32 @@
     
     // set variables here from Root.strings
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    float wateruse =(float)([prefs floatForKey:@"wateruse_day"]);
-    float waterprice = ([prefs floatForKey:@"m3_waterprice"]);
-    NSLog(@"how many times a day the tap is turned on %f", wateruse);
-    NSLog(@"how much does water cost %f", waterprice);
+    float waterUse =(float)([prefs floatForKey:@"wateruse_day"]);
+    float waterPrice = (float)([prefs floatForKey:@"m3_waterprice"])/1000;
+    float kwhPrice = (float)([prefs floatForKey:@"kwh_price"]);
+    float hotWaterKwh = (float)(4186*(70-5))/3600000;
 
     
     //Let's print in the console what the user had chosen;
     NSLog(@"rørdiameter i cm %f",pipeWidth);
-    
-    
+    NSLog(@"how many times a day the tap is turned on %f", waterUse);
+    NSLog(@"how much does water cost %f", waterPrice);
+    NSLog(@"how much does it take to heat 1 liter %f", hotWaterKwh);
     
     // do calculation here
     float pipeVolume = 3.14*pipeLength*10*(pipeWidth/20)*(pipeWidth/20);
     float pipeLag = (pipeVolume/tapConsumption)*60;
+    float waterYear = pipeVolume*waterUse*365;
     
     
     //write result to the label
     NSString* myNewString = [NSString stringWithFormat:@"%0.1f s", pipeLag];
     self.label.text = myNewString;
-    NSString* myWaterString = [NSString stringWithFormat:@"%0.1f l", pipeVolume];
+    NSString* myWaterString = [NSString stringWithFormat:@"%0.1f L", pipeVolume];
     self.wWater.text = myWaterString;
-    NSString* myWaterYearString = [NSString stringWithFormat:@"%0.1f l", pipeVolume*wateruse*365];
+    NSString* myWaterYearString = [NSString stringWithFormat:@"%0.1f L", waterYear];
     self.wYear.text = myWaterYearString;
-    NSString* myPriceYear = [NSString stringWithFormat:@"%0.1f kr", pipeVolume*wateruse*365*waterprice*0.001];
+    NSString* myPriceYear = [NSString stringWithFormat:@"%0.1f Kr", waterYear*waterPrice+waterYear*hotWaterKwh*kwhPrice];
     self.pYear.text = myPriceYear;
 }
 @end
