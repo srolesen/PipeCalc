@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Plumber Picker View Controller-->
@@ -26,11 +26,11 @@
                                     <constraint firstAttribute="height" constant="30" id="c12-lB-2cy"/>
                                     <constraint firstAttribute="width" constant="73" id="rAS-5t-lHn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="time in seconds before tapwater get's hot" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="o96-NK-8ZR">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time in seconds before tapwater get's hot" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="o96-NK-8ZR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="G3X-j6-bK5"/>
                                     <constraint firstAttribute="height" constant="56" id="fch-m7-Vpk"/>
@@ -44,8 +44,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wasted water" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-Hh-aLB">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wasted water" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-Hh-aLB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="8sz-bz-F7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,14 +57,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wasted water/year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-YV-lvk">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wasted water/year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-YV-lvk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Se9-Eo-kOf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="heat+water price/year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-tT-Tap">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Heat+water price/year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-tT-Tap">
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="8wZ-hW-JXO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -77,14 +86,16 @@
                             <constraint firstItem="Ovt-Hh-aLB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="85" id="7pf-pw-ZLA"/>
                             <constraint firstAttribute="trailing" secondItem="wmv-aD-jjK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9Et-gj-ELm"/>
                             <constraint firstItem="o96-NK-8ZR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DJH-Xz-pN2"/>
-                            <constraint firstItem="Ovt-Hh-aLB" firstAttribute="baseline" secondItem="wmv-aD-jjK" secondAttribute="baseline" type="default" id="DVZ-ec-Nb1"/>
                             <constraint firstItem="Qxy-tT-Tap" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Gop-lW-Ruk"/>
                             <constraint firstItem="9wA-LR-6RY" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="J14-tp-bom"/>
                             <constraint firstItem="o96-NK-8ZR" firstAttribute="centerY" secondItem="EWt-J5-UZP" secondAttribute="centerY" type="default" id="KhN-bj-rn5"/>
                             <constraint firstItem="Brn-YV-lvk" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Maq-5e-5ej"/>
+                            <constraint firstItem="wmv-aD-jjK" firstAttribute="top" secondItem="Ovt-Hh-aLB" secondAttribute="top" type="default" id="Ny7-df-Z3q"/>
                             <constraint firstItem="Brn-YV-lvk" firstAttribute="top" secondItem="3" secondAttribute="top" constant="133" id="Qe5-pC-mPg"/>
                             <constraint firstItem="wmv-aD-jjK" firstAttribute="leading" secondItem="EWt-J5-UZP" secondAttribute="leading" type="default" id="RQj-VO-lYc"/>
+                            <constraint firstItem="CTo-jv-oDD" firstAttribute="top" secondItem="Brn-YV-lvk" secondAttribute="top" type="default" id="UXW-ib-0ZK"/>
                             <constraint firstItem="fGJ-MW-eHK" firstAttribute="baseline" secondItem="Qxy-tT-Tap" secondAttribute="baseline" type="default" id="bai-ni-RU3"/>
+                            <constraint firstItem="fGJ-MW-eHK" firstAttribute="top" secondItem="Qxy-tT-Tap" secondAttribute="top" type="default" id="cKR-LL-ekC"/>
                             <constraint firstItem="Brn-YV-lvk" firstAttribute="baseline" secondItem="CTo-jv-oDD" secondAttribute="baseline" type="default" id="dm3-fI-7yA"/>
                             <constraint firstItem="9wA-LR-6RY" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="gEQ-uo-l5m"/>
                             <constraint firstItem="CTo-jv-oDD" firstAttribute="leading" secondItem="wmv-aD-jjK" secondAttribute="leading" type="default" id="iDA-IJ-Nxn"/>
@@ -93,6 +104,7 @@
                             <constraint firstItem="CTo-jv-oDD" firstAttribute="leading" secondItem="fGJ-MW-eHK" secondAttribute="leading" type="default" id="pmg-kS-A6z"/>
                             <constraint firstItem="Ovt-Hh-aLB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qy0-dm-C5o"/>
                             <constraint firstItem="o96-NK-8ZR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="15" id="uWq-u3-0WP"/>
+                            <constraint firstItem="wmv-aD-jjK" firstAttribute="baseline" secondItem="Ovt-Hh-aLB" secondAttribute="baseline" type="default" id="yHG-yB-jxw"/>
                         </constraints>
                     </view>
                     <connections>
