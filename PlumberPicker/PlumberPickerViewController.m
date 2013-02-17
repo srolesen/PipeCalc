@@ -86,8 +86,11 @@
     }
     if (component == 1)
     {
-        if (row == 0)
-            return @"Meter";
+        if (row % 2 == 0)
+            return @"MissT";
+        else
+            if (1)
+                return @"Rocks";
         else
         {
             NSString* myNewString = [NSString stringWithFormat:@"%i", row];
